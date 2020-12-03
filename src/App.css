@@ -1,0 +1,111 @@
+html{
+  height: 100%;
+}
+body{
+  min-height: 100%;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background-color:#86aff0;
+}
+.form-wrap{
+  background-color: white;
+    border-radius: 15px;
+    box-shadow: 0px 3px 35px 0px #8ba3be, 5px 15px 15px 5px rgba(0,0,0,0);
+    padding: 160px 25px 25px 25px;
+    margin-top: 61px;
+}
+.cvv-wrap,
+.exp-wrap,
+.input-wrap,.card-holder,.card-expiry{
+  display: grid;
+  row-gap: 5px;
+}
+.form-wrap form,
+.expiry-cvv-wrap,
+.select-wrap{
+  display: grid;
+  row-gap: 10px;
+}
+.form-wrap form{
+ width: 500px;
+}
+
+.select-wrap{
+  grid-template-columns: auto auto;
+  column-gap: 10px;
+}
+.expiry-cvv-wrap{
+  grid-template-columns: 71% 25%;
+  column-gap: 20px;
+  padding-bottom: 20px;
+}
+
+.cvv-wrap > input{
+  min-width: 10px;
+}
+
+input, select{
+  padding: 10px 10px 10px 10px;
+  
+  color: #000;
+  font-size: inherit;
+  background: #fff;
+  border: none;
+  border: 1px solid #e0e0e0;
+}
+
+.submit-button{
+  height: 40px;
+  background: #fb641b;
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,.2);
+  border: none;
+  color: #fff;
+  border-radius: 7px;
+}
+
+
+.credit-card-wrap{
+  width: 400px;
+  height: 215px;
+  background-image: url("./cardBackground.jpg");
+  background-color: #cccccc;
+  position: absolute;
+  top: 5%;
+  margin-left: 5%;
+  background-size: cover;
+  border-radius: 15px;
+  box-shadow: 0px 3px 35px 0px #8ba3be, 5px 15px 15px 5px rgba(0,0,0,0);
+  color: #fff;
+  display: grid;
+
+}
+.logo-chip-wrap,.card-holder-expiry-wrap{
+  display: grid;
+  grid-template-columns: auto auto;
+  height: 40px;
+}
+.logo{
+  text-align: right;
+    padding-right: 20px;
+    padding-top: 20px;
+    font-size: 30px;
+    font-weight: 900;
+}
+.chip img{
+  height: 40px;
+  padding: 20px;
+}
+.card-number-wrap{
+  text-align: center;
+  font-size: 35px;
+}
+.card-expiry{
+  text-align: right;
+  padding: 5px 20px 20px 20px;
+}
+.card-holder{
+  padding: 5px 20px 20px 20px;
+}
+
+
